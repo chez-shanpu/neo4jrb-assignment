@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version<br>
+    2.3.1
+    
+- neo4j version<br>
+    community-3.4.1
+    
+## 課題2
+`rake neo4j:migrate`実行後、以下のrakeタスクを実行
+```
+rake assignment2:exec
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
