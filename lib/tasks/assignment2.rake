@@ -17,7 +17,7 @@ namespace :assignment2 do
           end
           univ.departments = departments
           univ.save
-          一つの大学に対して学部群は一つのみ
+          # 一つの大学に対して学部群は一つのみ
           univ = nil
         end
       end
