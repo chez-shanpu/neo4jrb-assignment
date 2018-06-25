@@ -32,19 +32,19 @@ namespace :assignment3 do
       }
       player = Player.find_or_create_by(no: player_data[:no])
       player.name = player_data[:name]
-      player.position = player_data[:position]
-      player.birthday = player_data[:birthday]
-      player.age = player_data[:age]
-      player.year = player_data[:year]
-      player.body_height = player_data[:body_height]
-      player.body_weight = player_data[:body_weight]
-      player.blood_type = player_data[:blood_type]
-      player.pitching_and_batting = player_data[:pitching_and_batting]
-      player.birthplace = player_data[:birthplace]
-      player.annual_income = player_data[:annual_income]
+      player.position = Position.find_or_create_by(name: player_data[:position])
+      player.birthday = Birthday.find_or_create_by(date: player_data[:birthday])
+      player.age = Age.find_or_create_by(age: player_data[:age])
+      player.year = Year.find_or_create_by(year: player_data[:year])
+      player.body_height = BodyHeight.find_or_create_by(height: player_data[:body_height])
+      player.body_weight = BodyWeight.find_or_create_by(weight: player_data[:body_weight])
+      player.blood_type = BloodType.find_or_create_by(type: player_data[:blood_type])
+      player.pitching_and_batting = PitchingAndBatting.find_or_create_by(dexterity: player_data[:pitching_and_batting])
+      player.birthplace = Birthplace.find_or_create_by(name: player_data[:birthplace])
+      player.annual_income = AnnualIncome.find_or_create_by(amount: player_data[:annual_income])
       player.save
     end
-
+    puts 'Completed'
   end
 end
 
