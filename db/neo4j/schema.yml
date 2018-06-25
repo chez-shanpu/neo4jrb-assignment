@@ -14,9 +14,32 @@
 :constraints:
 - CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
   ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( age:Age ) ASSERT age.uuid IS UNIQUE
+- CONSTRAINT ON ( annualincome:AnnualIncome ) ASSERT annualincome.uuid IS UNIQUE
+- CONSTRAINT ON ( birthday:Birthday ) ASSERT birthday.uuid IS UNIQUE
+- CONSTRAINT ON ( birthplace:Birthplace ) ASSERT birthplace.uuid IS UNIQUE
+- CONSTRAINT ON ( bloodtype:BloodType ) ASSERT bloodtype.uuid IS UNIQUE
+- CONSTRAINT ON ( bodyheight:BodyHeight ) ASSERT bodyheight.uuid IS UNIQUE
+- CONSTRAINT ON ( bodyweight:BodyWeight ) ASSERT bodyweight.uuid IS UNIQUE
 - CONSTRAINT ON ( department:Department ) ASSERT department.uuid IS UNIQUE
+- CONSTRAINT ON ( pitchingandbatting:PitchingAndBatting ) ASSERT pitchingandbatting.uuid
+  IS UNIQUE
+- CONSTRAINT ON ( player:Player ) ASSERT player.uuid IS UNIQUE
+- CONSTRAINT ON ( position:Position ) ASSERT position.uuid IS UNIQUE
 - CONSTRAINT ON ( university:University ) ASSERT university.uuid IS UNIQUE
+- CONSTRAINT ON ( year:Year ) ASSERT year.uuid IS UNIQUE
 :indexes: []
 :versions:
 - '20180624054137'
 - '20180624054206'
+- '20180624064645'
+- '20180624064744'
+- '20180624064831'
+- '20180624065045'
+- '20180624065149'
+- '20180624065229'
+- '20180624065256'
+- '20180624065317'
+- '20180624065543'
+- '20180624065632'
+- '20180624065718'
